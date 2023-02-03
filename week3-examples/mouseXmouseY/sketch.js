@@ -5,6 +5,7 @@ function setup() {
 }
 
 function draw() {
+  //background(0);
   noStroke();
   fill(220, 0, 200);
   /* using the mouseX and mouseY variables to track mouse movement
