@@ -9,7 +9,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(400, 700);
 
   button = createButton('play');
   button.position(310, 620);
@@ -33,3 +33,10 @@ function toggle() {
   playing = !playing;
 }
 
+function draw() {
+  background(200);
+  //draws the video onto the canvas instead of as a stand alone element
+  image(vrKid, 15, 15);
+  //adds image filter to video - see filter reference for other options
+  // filter(POSTERIZE, 3);
+}
